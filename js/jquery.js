@@ -9,10 +9,9 @@ $(document).ready(function(){
 $(window).on("scroll",function(){
   if($(window).scrollTop()){
     $("nav").addClass('gray')
-    $("nav").css({'position': 'fixed', 'top': '0px'});
   }
   else {
     $("nav").removeClass('gray');
-    $("nav").css({'position': 'static', 'top': '0px'});
+
   }
 })
