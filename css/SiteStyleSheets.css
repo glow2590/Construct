@@ -283,7 +283,7 @@ input::-webkit-inner-spin-button {
   height: 130vh;
   background:hsla(0, 0%, 88%, 0.77);
   border-radius: 1%;
-  padding-top:30px;
+  padding-top:15vh;
 
 }
 .cont-frm-container textarea{
