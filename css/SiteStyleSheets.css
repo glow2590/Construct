@@ -36,7 +36,7 @@ table tr td img.main{
   height: 100%;
 }
 table tr td figcaption{
-  margin-left: 25%;
+  margin-left: 5%;
 }
 
  body{
@@ -142,7 +142,7 @@ nav ul li a:hover{
   margin:  7px;
 }
 .projects{
-  width:320px;
+  width:25vw;
   height: 300px;
 }
 body.modal-open {
@@ -253,6 +253,7 @@ padding: 0;
 .img-close:active{
     outline:none;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
@@ -267,6 +268,7 @@ input::-webkit-inner-spin-button {
     margin-top: 1em;
     background: hsla(210, 0%, 57%, 0.99);
     height: 125px;
+
 }
 .row {
       position:static;
