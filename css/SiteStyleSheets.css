@@ -231,8 +231,11 @@ padding: 0;
     width:100%;
     height: 115px;
   }
-  .projects-container h3{
+  .projects-container h3,.cont-frm-container h3{
     font-size: 20px;
+  }
+  .cont-frm-container p{
+    font-size: 15px;
   }
   .cont-frm-container h1{
     font-size:  32px;
