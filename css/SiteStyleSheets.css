@@ -11,6 +11,27 @@ table tr td img{
 
 }
 
+.scroll-top:hover{
+  background: black;
+}
+.scroll-top{
+  position: fixed;
+  z-index: 99;
+  right: 10px;
+  top: 90%;
+  height: 40px;
+  width: 40px;
+  background:dimgray;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.scroll-top i{
+  padding-top: 5px;
+}
+
 table tr td img.main{
   height: 100%;
 }
@@ -49,6 +70,7 @@ text-shadow:2px 2px gray;
   line-height: 30px;
   text-align: justify;
 
+
 }
 .logo{
   position: fixed;
@@ -80,7 +102,7 @@ nav ul{
 }
 
 nav.gray ul{
-background: dimgray;
+background: hsla(210, 0%, 57%, 1);
 
 }
 nav.gray{
@@ -106,7 +128,7 @@ nav ul li a:hover{
 }
 .menu-icon{
   width: 100%;
-  background: dimgray;
+  background: hsla(210, 0%, 57%, 1);
   text-align: right;;
   box-sizing: border-box;
   padding: 15px 24px;
@@ -115,6 +137,18 @@ nav ul li a:hover{
   display: none;
 
 }
+.form-control{
+  width: 70%;
+  margin:  7px;
+}
+.projects{
+  width:320px;
+  height: 300px;
+}
+body.modal-open {
+    overflow: hidden;
+}
+
 @media(max-width:600px) {
   .logo{
     position: fixed;
@@ -166,6 +200,7 @@ nav.gray{
   .services{
     height: 300px;
   }
+
   table tr td img.services{
 width: 100%;
 height: 35%;
@@ -176,10 +211,10 @@ height: 35%;
 padding: 0;
 
   }
-
   table{
+
     width: 100%;
-    padding: 0px;
+    padding: 0;
 
   }
   table tr td img.main{
@@ -187,15 +222,43 @@ padding: 0;
     padding: 0;
   }
 
-}
+  .form-control{
+    width: 90%;
 
+  }
+
+  .projects{
+    width:100%;
+    height: 115px;
+  }
+  .projects-container h3{
+    font-size: 20px;
+  }
+}
+.img-close{
+   position: absolute;
+    top: 8px;
+    right: 16px;
+     color:black;
+
+
+}
+.img-close:active{
+    outline:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
 .footer {
     clear: both;
     position: relative;
     z-index: 10;
     height: 3em;
     margin-top: 1em;
-    background-color: gray;
+    background: hsla(210, 0%, 57%, 0.99);
     height: 125px;
 }
 .row {
@@ -206,12 +269,34 @@ padding: 0;
 {
   padding-top: 20vh;
   padding-bottom: 20vh;
+
 }
-.services-container{
+.services-container,.projects-container{
   font-size: 20px;
     line-height: 30px;
-    padding-top:23vh;
+    padding-top:10vh;
+    padding-bottom: 10vh;
+    background: hsla(0, 0%, 88%, 0.77);
+
 }
+.cont-frm-container{
+  height: 100vh;
+  background:hsla(0, 0%, 88%, 0.77);
+  border-radius: 1%;
+  padding-top:30px;
+
+}
+.cont-frm-container textarea{
+  resize: none;
+  height: 25vh;
+}
+.projects-container{
+  background: #fff;
+margin-top: 20px;
+
+}
+
+
 .services-container  img{
   border-radius: 25%;
 }

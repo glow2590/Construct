@@ -9,9 +9,16 @@ $(document).ready(function(){
 $(window).on("scroll",function(){
   if($(window).scrollTop()){
     $("nav").addClass('gray')
+    $(".scroll-top").show();
   }
   else {
     $("nav").removeClass('gray');
-
+    $(".scroll-top").hide();
   }
 })
+
+$("#imgModal1").on("show", function () {
+  $("body").addClass("modal-open");
+}).on("hidden", function () {
+  $("body").removeClass("modal-open")
+});
