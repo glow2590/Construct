@@ -234,6 +234,9 @@ padding: 0;
   .projects-container h3{
     font-size: 20px;
   }
+  .cont-frm-container h1{
+    font-size:  20px; ;
+  }
 }
 .img-close{
    position: absolute;
