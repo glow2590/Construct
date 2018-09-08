@@ -58,7 +58,17 @@ text-shadow:2px 2px gray;
    height: 5vh;
 
  }
+ input[type=text] ,input[type=password],input[type=email],input[type=number]{
+     background: transparent;
+     border: none;
+     border-bottom: 1px solid #000000;
+     display: block;
+       padding: 5px 20px;
 
+ }
+ input[type=text]:focus ,input[type=password]:focus{
+outline: none;
+ }
  header{
    width: 100%;
    height: 100vh;
@@ -66,6 +76,7 @@ text-shadow:2px 2px gray;
    background-size: cover;
    z-index:98;
  }
+
 .content{
   width: 90%;
   margin: 4em auto;
@@ -152,7 +163,7 @@ body.modal-open {
     overflow: hidden;
 }
 .login-signup input{
-  width: 30%;
+  width: 40%;
 }
 .login-signup{
   width:80%;
@@ -175,7 +186,7 @@ a:hover{
   padding-top:5px;
 font-size: 13px;
 }
-.info .float-right{
+.top-header .float-right{
   padding-right: 10px;
 }
 
@@ -243,7 +254,10 @@ margin-top: 20px;
 
 }
 
-
+.usrnmpw-error{
+  color:red;
+  display:none;
+}
 .modal{
   top: 25%;
 }
@@ -259,13 +273,13 @@ margin-top: 20px;
 
 @media(max-width:600px) {
   .logo{
-    position: fixed;
-    top: 40px;
+    position: absolute;
+    top: 0px;
     margin-top: 16px;
   }
   nav{
-    position:;
-    top:40px;
+    position:fixed;
+    top:4vh;
   }
   nav.gray .logo{
     top:0px;
@@ -304,7 +318,7 @@ nav.gray{
     font-size: 12px;
   }
   .top-header{
-    position: ;
+    height: 5vh;
   }
   header h1{
     font-size: 35px;
@@ -363,4 +377,8 @@ padding: 0;
     width:100%;}
     .login-signup input{
       width:100%;}
+
+    .info{
+      font-size: 0.7em;
+    }
 }
