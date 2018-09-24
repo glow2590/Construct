@@ -4,6 +4,13 @@ html,body{
     width: 100%;
 
 }
+
+
+.loader{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+z-index: 1000;}
 table tr td img{
 
   height:50%;
@@ -12,7 +19,8 @@ table tr td img{
 }
 
 .scroll-top:hover{
-  background: black;
+  background: gray;
+  color: white;
 }
 .scroll-top{
   position: fixed;
@@ -24,7 +32,7 @@ table tr td img{
   background:dimgray;
   text-align: center;
   cursor: pointer;
-  color: white;
+  color: ;
   display: none;
 }
 
@@ -33,7 +41,7 @@ table tr td img{
 }
 
 table tr td img.main{
-  height: 100%;
+  height: 70%;
 }
 table tr td figcaption{
   margin-left: 5%;
@@ -66,7 +74,7 @@ text-shadow:2px 2px gray;
        padding: 5px 20px;
 
  }
- input[type=text]:focus ,input[type=password]:focus{
+ input[type=text]:focus ,input[type=password]:focus,input[type=email]:focus,input[type=number]:focus{
 outline: none;
  }
  header{
@@ -156,8 +164,8 @@ nav ul li a:hover{
   margin:  7px;
 }
 .projects{
-  width:25vw;
-  height: 300px;
+  width:24.5vw;
+  height:300px;
 }
 body.modal-open {
     overflow: hidden;
@@ -238,15 +246,20 @@ input::-webkit-inner-spin-button {
 
 }
 .cont-frm-container{
-  height: 142vh;
+  height: auto;
   background:hsla(0, 0%, 88%, 0.77);
   border-radius: 1%;
   padding-top:12vh;
+  width: 50vw;
+  transform: translate(35%);
 
+}
+.cont-frm-container input{
+  width: 70%;
 }
 .cont-frm-container textarea{
   resize: none;
-  height: 25vh;
+  height: 19vh;
 }
 .projects-container{
   background: #fff;
@@ -263,6 +276,7 @@ margin-top: 20px;
 }
 .services-container  img{
   border-radius: 25%;
+  height: 35%;  
 }
 
 .signup{
@@ -332,7 +346,10 @@ nav.gray{
   .services{
     height: 300px;
   }
-
+  .projects{
+    width:23vw;
+    height:150px;
+  }
   table tr td img.services{
 width: 100%;
 height: 35%;
@@ -343,12 +360,7 @@ height: 35%;
 padding: 0;
 
   }
-  table{
 
-    width: 100%;
-    padding: 0;
-
-  }
   table tr td img.main{
     height: 50%;
     padding: 0;
@@ -359,10 +371,9 @@ padding: 0;
 
   }
 
-  .projects{
-    width:100%;
-    height: 115px;
-  }
+
+
+
   .projects-container h3,.cont-frm-container h3{
     font-size: 20px;
   }
@@ -371,8 +382,15 @@ padding: 0;
   }
   .cont-frm-container h1{
     font-size:  32px;
-    padding-bottom: 10vh;
+  ;
   }
+    .cont-frm-container {
+      width: 90vw;
+      transform: translate(0);
+    }
+    .cont-frm-container input{
+      width: 90%;
+    }
   .login-signup{
     width:100%;}
     .login-signup input{

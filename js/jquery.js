@@ -90,8 +90,23 @@ $(document).ready(function () {
         $('.check').not(this).prop('checked', false);
 
     })
+    var page_url = window.location.href;
+    var page_id = page_url.substring(page_url.lastIndexOf("#") + 1);
+    if (page_id == "contact-form" ||page_id == "top-login"||page_id == "services"){
+      $("html,body").animate({
+      scrollTop:$("#scroll-" +page_id).offset().top - 60
+    },2000 );
+  }
+
+$(".scroll-top").click(function(){
+  $('html, body').animate({scrollTop : 0},800);
+   return false;
+})
 });
 //submit refresh sol.
 $("#loginForm").submit(function(e) {
     e.preventDefault();
 });
+$(window).on("load",function(){
+  $(".loader").fadeOut();
+  });
